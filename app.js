@@ -13,6 +13,18 @@ router.get('/fund-rising.html', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/fund-riser.html'));
 });
 
+router.get('/donate.html', (req, res) => {
+  res.sendFile(path.join(__dirname, '/public/donate.html'));
+});
+
+router.get('/sig.html', (req, res) => {
+  res.sendFile(path.join(__dirname, '/public/sig.html'));
+});
+
+router.get('/public/okok.html', (req, res) => {
+  res.sendFile(path.join(__dirname, '/public/okok.html'));
+});
+
 let port = 3000;
 app.use('/', router);
 app.listen(3000, (req, res) => {
